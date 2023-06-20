@@ -1,6 +1,6 @@
 %option noyywrap nounput noinput
 /*%option noyyalloc noyyrealloc noyyfree*/
-%option reentrant bison-bridge bison-locations
+/*%option reentrant bison-bridge bison-locations*/
 
 %{
     #include <stdio.h>

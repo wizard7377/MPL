@@ -1,3 +1,4 @@
+#pragma once
 enum tokenTypes {
     T_VAR,
     T_LIT

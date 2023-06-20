@@ -1,6 +1,7 @@
 BASE = mpl
 BISON = bison
 FLEX = flex
+CFLAGS = -g # Flag for implicit rules. Turn on debug info
 
 all: $(BASE) clean
 
@@ -8,14 +9,14 @@ all: $(BASE) clean
 	$(BISON) $(BISONFLAGS) --header -o $*.c $<
 
 %.c: %.l
-	$(FLEX) $(FLEXFLAGS) --header-file=$*.h -o$@ $<
+	$(FLEX) $(FLEXFLAGS) -o$@ $<
 
 lang.o: lang.c parse.h
 #parse.o: parse.c
 prep.o: prep.c
 main.o: main.c prep.h
 $(BASE): parse.o lang.o prep.o main.o
-	$(CC) $(CFLAGS) -g -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 
 
