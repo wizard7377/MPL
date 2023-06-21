@@ -1,5 +1,6 @@
 #include "structs.h"
 #include "parse.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 
@@ -14,6 +15,7 @@ int main(int argc, char * argv[]) {
         //if (inFile) yyrestart(inFile);
     } else {
         printf("No files provided");
+        return EXIT_FAILURE;
     }
 
     yyparse();

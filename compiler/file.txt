@@ -1,1 +1,2 @@
-cat cot
+$A @[ a fun token for
+fun @]; @[which does exist@]: $Because all the time;;

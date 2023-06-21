@@ -3,17 +3,20 @@ enum tokenTypes {
     T_VAR,
     T_LIT
 };
-struct mathToken {
-    enum tokenTypes tokenType;
-    int len;
+
+struct mtoken {
+    enum tokenTypes tType;
     char * txt;
 };
 struct statement {
     int len;
-    struct mathToken * tokPart;
+    struct mtoken * tokPart;
+};
+struct stateList {
+    int len;
+    struct statement * lState;
 };
 struct ruleForm {
-    int nPre;
-    int nPro;
-    struct statement * pState;
+    struct stateList preState;
+    struct stateList proveState;
 };

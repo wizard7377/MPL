@@ -5,11 +5,22 @@
 %{
     #include <stdio.h>
     #include "parse.h"
+    #include <string.h>
 %}
 
 %%
 
-cot { printf("portable bed"); }
-cat { printf("thankless pet"); }
-cats { printf("anti-herd"); }
+\@\[(.|\n)+\@\] { yylval.MATHTOK = strndup(yytext+(2*sizeof(char)),yyleng-4); return MATHTOK; }
+
+    /* [a-zA-Z0-9]+ { strncpy(yylval.MATHTOK,yytext,yyleng); return MATHTOK; } */
+[a-zA-Z0-9]+ { yylval.MATHTOK = strdup(yytext); return MATHTOK; }
+":" { return IMP; }
+";;" { return EOS; }
+";" { return SEP; }
+"$" { return VAR; }
+[[:blank:]];
+<<EOF>> { return EOF; }
+[^a-zA-Z0-9]+ { yylval.MATHTOK = strndup(yytext,yyleng); return MATHTOK; }
 . { return *yytext; }
+
+%%

@@ -6,7 +6,7 @@ CFLAGS = -g # Flag for implicit rules. Turn on debug info
 all: $(BASE) clean
 
 %.c %.h: %.y
-	$(BISON) $(BISONFLAGS) --header -o $*.c $<
+	$(BISON) $(BISONFLAGS) -t --header -o $*.c $<
 
 %.c: %.l
 	$(FLEX) $(FLEXFLAGS) -o$@ $<
