@@ -1,28 +1,28 @@
 BASE = mpl
 BISON = bison
-FLEX = flex
-CFLAGS = -g # Flag for implicit rules. Turn on debug info
+FLEX = reflex
+CXXFLAGS = -g # Flag for implicit rules. Turn on debug info
 
 all: $(BASE) clean
 
-%.c %.h: %.y
-	$(BISON) $(BISONFLAGS) -t --header -o $*.c $<
+%.cpp %.hpp: %.yy
+	$(BISON) $(BISONFLAGS) -t --header -o $*.cpp $<
 
-%.c: %.l
-	$(FLEX) $(FLEXFLAGS) -o$@ $<
+%.cpp %.hpp: %.ll
+	$(FLEX) -x -R --header-file=lang.hpp -o$@ $<
 
-lang.o: lang.c parse.h
-#parse.o: parse.c
-prep.o: prep.c
-main.o: main.c prep.h
-$(BASE): parse.o lang.o prep.o main.o
-	$(CC) $(CFLAGS) -o $@ $^
+lang.o: lang.cpp parse.hpp 
+parse.o: parse.cpp lang.hpp
+prep.o: prep.cpp 
+main.o: main.cpp 
+$(BASE): lang.o parse.o main.o
+	$(CXX) $(CXXFLAGS) -o $@ $^ -lreflex
 
 
 
 CLEANFILES =						\
   *.o						\
-  parse.[ch] parse.output parse.xml parse.html parse.gv	\
-  lang.c
+  parse.cpp parse.hpp parse.output parse.xml parse.html parse.gv	\
+  lang.cpp lang.hpp 
 clean:
 	rm -f $(CLEANFILES)

@@ -1,0 +1,125 @@
+Usage: reflex [OPTIONS] [FILE]
+
+    Scanner:
+        -+, --flex
+                generate Flex-compatible C++ scanner
+        -a, --dotall
+                dot in patterns match newline
+        -B, --batch
+                generate scanner for batch input by buffering the entire input
+        -f, --full
+                generate full scanner with FSM opcode tables
+        -F, --fast
+                generate fast scanner with FSM code
+        -i, --case-insensitive
+                ignore case in patterns
+        -I, --interactive, --always-interactive
+                generate interactive scanner
+        -m NAME, --matcher=NAME
+                match with boost, boost_perl, pcre2_perl, reflex, std_ecma, ...
+        --pattern=NAME
+                use custom pattern class NAME for custom matcher option -m
+        --include=FILE
+                include header FILE.h for custom matcher option -m
+        -S, --find
+                generate search engine to find matches, ignores unmatched input
+        -T N, --tabs=N
+                set default tab size to N (1,2,4,8) for indent/dedent matching
+        -u, --unicode
+                match Unicode . (dot), \p, \s, \w, etc and group UTF-8 bytes
+        -x, --freespace
+                ignore space in patterns
+
+    Generated files:
+        -o FILE, --outfile=FILE
+                specify output FILE instead of lex.yy.cpp
+        -t, --stdout
+                write scanner on stdout instead of lex.yy.cpp
+        --graphs-file[=FILE[.gv]]
+                write the scanner's DFA in Graphviz format to FILE.gv
+        --header-file[=FILE]
+                write a C++ header FILE in addition to the scanner
+        --regexp-file[=FILE[.txt]]
+                write the scanner's regular expression patterns to FILE.txt
+        --tables-file[=FILE[.cpp]]
+                write the scanner's FSM opcode tables or FSM code to FILE.cpp
+
+    Generated code:
+        --namespace=NAME
+                use C++ namespace NAME for the generated scanner class, with
+                multiple namespaces specified as NAME1.NAME2.NAME3 ...
+        --lexer=NAME
+                use lexer class NAME instead of Lexer or yyFlexLexer
+        --lex=NAME
+                use lex function NAME instead of lex or yylex
+        --class=NAME
+                declare a user-defined scanner class NAME
+        --yyclass=NAME
+                generate Flex-compatible scanner with user-defined class NAME
+        --main
+                generate main() to invoke lex() or yylex() once
+        -L, --noline
+                suppress #line directives in scanner
+        -P NAME, --prefix=NAME
+                use NAME as prefix of the FlexLexer class name and its members
+        --nostdinit
+                initialize input to std::cin instead of stdin
+        --bison
+                generate global yylex() scanner, yytext, yyleng, yylineno
+        --bison-bridge
+                generate reentrant yylex() scanner for bison pure parser
+        --bison-cc
+                generate bison C++ interface code for bison lalr1.cc skeleton
+        --bison-cc-namespace=NAME
+                use namespace NAME with bison lalr1.cc skeleton
+        --bison-cc-parser=NAME
+                use parser class NAME with bison lalr1.cc skeleton
+        --bison-complete
+                use bison complete-symbols feature, implies bison-cc
+        --bison-locations
+                include bison yylloc support
+        -R, --reentrant
+                generate Flex-compatible yylex() reentrant scanner functions
+                NOTE: adds functions only, reflex scanners are always reentrant
+        -y, --yy
+                same as --flex and --bison, also generate global yyin, yyout
+        --noyywrap
+                do not call global yywrap() on EOF, requires option --flex
+        --exception=VALUE
+                use exception VALUE to throw in the default rule of the scanner
+        --token-type=NAME
+                use NAME as the return type of lex() and yylex() instead of int
+
+    Debugging:
+        -d, --debug
+                enable debug mode in scanner
+        -p, --perf-report
+                scanner reports detailed performance statistics to stderr
+        -s, --nodefault
+                disable the default rule in scanner that echoes unmatched text
+        -v, --verbose
+                report summary of scanner statistics to stdout
+        -w, --nowarn
+                do not generate warnings
+
+    Miscellaneous:
+        -c, -n
+                do-nothing POSIX options
+        -?, -h, --help
+                produce this help message and exit
+        -V, --version
+                report reflex version and exit
+
+    Lex/Flex options that are enabled by default or have no effect:
+        --c++                  default
+        --lex-compat           n/a
+        --never-interactive    default
+        --nounistd             n/a
+        --posix-compat         n/a
+        --stack                n/a
+        --warn                 default
+        --yylineno             default
+        --yymore               default
+        --7bit                 n/a
+        --8bit                 default
+
