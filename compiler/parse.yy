@@ -33,15 +33,18 @@
 %define api.token.prefix {TOK_}
 %parse-param { yy::Scanner& lexer }
 %define api.token.constructor
-%token SEP IMP EOS EOI VAR
+%token SEP IMP EOS VAR
 %token <std::string> MATHTOK
 %nterm <std::vector<mtoken>> state
 %nterm <std::vector<std::vector<mtoken>>> stategroup
 %nterm <ruleForm> hypo
+%glr-parser
+%define parse.error detailed
 
 
 %start hypo
 %%
+
 
 
 hypo: stategroup EOS { 
@@ -53,11 +56,11 @@ hypo: stategroup EOS {
 		$$.proveState = $3;
 	}	
     ;
-stategroup: state { $$.push_back($1); }
+stategroup: state { $$ = statel({$1}); }
     | stategroup SEP state { $$ = $1; $$.push_back($3); }
     ;
 state: MATHTOK { $$.emplace_back(); $$[0].txt = $1; $$[0].tType = T_LIT; }
-    | VAR MATHTOK { $$[0].txt = $2; $$[0].tType = T_VAR; }
+    | VAR MATHTOK { $$.emplace_back(); $$[0].txt = $2; $$[0].tType = T_VAR; }
     | state state { $$ = $1; for (auto a : $2) $$.push_back(a); }	
     ;
 %%

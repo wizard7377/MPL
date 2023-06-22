@@ -1,0 +1,238 @@
+State 11 conflicts: 2 shift/reduce
+
+
+Grammar
+
+    0 $accept: hypo $end
+
+    1 hypo: stategroup EOS
+    2     | stategroup IMP stategroup EOS
+
+    3 stategroup: state
+    4           | stategroup SEP state
+
+    5 state: MATHTOK
+    6      | VAR MATHTOK
+    7      | state state
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    SEP (258) 4
+    IMP (259) 2
+    EOS (260) 1 2
+    VAR (261) 6
+    MATHTOK <std::string> (262) 5 6
+
+
+Nonterminals, with rules where they appear
+
+    $accept (8)
+        on left: 0
+    hypo <ruleForm> (9)
+        on left: 1 2
+        on right: 0
+    stategroup <std::vector<std::vector<mtoken>>> (10)
+        on left: 3 4
+        on right: 1 2 4
+    state <std::vector<mtoken>> (11)
+        on left: 5 6 7
+        on right: 3 4 7
+
+
+State 0
+
+    0 $accept: • hypo $end
+    1 hypo: • stategroup EOS
+    2     | • stategroup IMP stategroup EOS
+    3 stategroup: • state
+    4           | • stategroup SEP state
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    hypo        go to state 3
+    stategroup  go to state 4
+    state       go to state 5
+
+
+State 1
+
+    6 state: VAR • MATHTOK
+
+    MATHTOK  shift, and go to state 6
+
+
+State 2
+
+    5 state: MATHTOK •
+
+    $default  reduce using rule 5 (state)
+
+
+State 3
+
+    0 $accept: hypo • $end
+
+    $end  shift, and go to state 7
+
+
+State 4
+
+    1 hypo: stategroup • EOS
+    2     | stategroup • IMP stategroup EOS
+    4 stategroup: stategroup • SEP state
+
+    SEP  shift, and go to state 8
+    IMP  shift, and go to state 9
+    EOS  shift, and go to state 10
+
+
+State 5
+
+    3 stategroup: state •  [SEP, IMP, EOS]
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+    7      | state • state
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    $default  reduce using rule 3 (stategroup)
+
+    state  go to state 11
+
+
+State 6
+
+    6 state: VAR MATHTOK •
+
+    $default  reduce using rule 6 (state)
+
+
+State 7
+
+    0 $accept: hypo $end •
+
+    $default  accept
+
+
+State 8
+
+    4 stategroup: stategroup SEP • state
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    state  go to state 12
+
+
+State 9
+
+    2 hypo: stategroup IMP • stategroup EOS
+    3 stategroup: • state
+    4           | • stategroup SEP state
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    stategroup  go to state 13
+    state       go to state 5
+
+
+State 10
+
+    1 hypo: stategroup EOS •
+
+    $default  reduce using rule 1 (hypo)
+
+
+State 11
+
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+    7      | state • state
+    7      | state state •  [SEP, IMP, EOS, VAR, MATHTOK]
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    VAR       [reduce using rule 7 (state)]
+    MATHTOK   [reduce using rule 7 (state)]
+    $default  reduce using rule 7 (state)
+
+    state  go to state 11
+
+    shift/reduce conflict on token MATHTOK:
+        7 state: state state •
+        5 state: • MATHTOK
+      Example: state state • MATHTOK
+      Shift derivation
+        state
+        ↳ 7: state state
+                   ↳ 7: state state
+                              ↳ 5: • MATHTOK
+      Reduce derivation
+        state
+        ↳ 7: state              state
+             ↳ 7: state state • ↳ 5: MATHTOK
+
+    shift/reduce conflict on token VAR:
+        7 state: state state •
+        6 state: • VAR MATHTOK
+      Example: state state • VAR MATHTOK
+      Shift derivation
+        state
+        ↳ 7: state state
+                   ↳ 7: state state
+                              ↳ 6: • VAR MATHTOK
+      Reduce derivation
+        state
+        ↳ 7: state              state
+             ↳ 7: state state • ↳ 6: VAR MATHTOK
+
+
+
+State 12
+
+    4 stategroup: stategroup SEP state •  [SEP, IMP, EOS]
+    5 state: • MATHTOK
+    6      | • VAR MATHTOK
+    7      | • state state
+    7      | state • state
+
+    VAR      shift, and go to state 1
+    MATHTOK  shift, and go to state 2
+
+    $default  reduce using rule 4 (stategroup)
+
+    state  go to state 11
+
+
+State 13
+
+    2 hypo: stategroup IMP stategroup • EOS
+    4 stategroup: stategroup • SEP state
+
+    SEP  shift, and go to state 8
+    EOS  shift, and go to state 14
+
+
+State 14
+
+    2 hypo: stategroup IMP stategroup EOS •
+
+    $default  reduce using rule 2 (hypo)

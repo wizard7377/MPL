@@ -1,0 +1,945 @@
+2Starting parse
+Entering state 0
+Stack now 0
+Reading a token
+Next token is token VAR ()
+Shifting token VAR ()
+Entering state 1
+Stack now 0 1
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 6
+Stack now 0 1 6
+Reducing stack by rule 6 (line 63):
+   $1 = token VAR ()
+   $2 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 5
+Stack now 0 5
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token MATHTOK ()
+Shifting token MATHTOK ()
+Entering state 2
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 2
+Reducing stack by rule 5 (line 62):
+   $1 = token MATHTOK ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Reading a token
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 11
+Stack now 0 5 11
+Next token is token EOS ()
+Reducing stack by rule 7 (line 64):
+   $1 = nterm state ()
+   $2 = nterm state ()
+-> $$ = nterm state ()
+Entering state 5
+Stack now 0 5
+Next token is token EOS ()
+Reducing stack by rule 3 (line 59):
+   $1 = nterm state ()
+-> $$ = nterm stategroup ()
+Entering state 4
+Stack now 0 4
+Next token is token EOS ()
+Shifting token EOS ()
+Entering state 10
+Stack now 0 4 10
+Reducing stack by rule 1 (line 50):
+   $1 = nterm stategroup ()
+   $2 = token EOS ()
+-> $$ = nterm hypo ()
+Entering state 3
+Stack now 0 3
+Reading a token
+Next token is token end of file ()
+Shifting token end of file ()
+Entering state 7
+Stack now 0 3 7
+Stack now 0 3 7
+Cleanup: popping token end of file ()
+Cleanup: popping nterm hypo ()

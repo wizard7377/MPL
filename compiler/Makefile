@@ -1,20 +1,22 @@
 BASE = mpl
 BISON = bison
 FLEX = reflex
+BISONFLAGS = -rall --report-file=file4.txt -Dparse.trace
 CXXFLAGS = -g # Flag for implicit rules. Turn on debug info
+FLEXFLAGS = -v -d -p -s
 
 all: $(BASE) clean
 
 %.cpp %.hpp: %.yy
-	$(BISON) $(BISONFLAGS) -t --header -o $*.cpp $<
+	$(BISON) $(BISONFLAGS) --header -o $*.cpp $<
 
 %.cpp %.hpp: %.ll
-	$(FLEX) -x -R --header-file=lang.hpp -o$@ $<
+	$(FLEX) $(FLEXFLAGS) -x -R --header-file=lang.hpp -o$@ $<
 
 lang.o: lang.cpp parse.hpp 
 parse.o: parse.cpp lang.hpp
 prep.o: prep.cpp 
-main.o: main.cpp 
+main.o: main.cpp parse.hpp lang.hpp structs.hpp
 $(BASE): lang.o parse.o main.o
 	$(CXX) $(CXXFLAGS) -o $@ $^ -lreflex
 

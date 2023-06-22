@@ -7,7 +7,7 @@
 
 
 int main(int argc, char * argv[]) {
-    printf("%d",argc);
+    //printf("%d",argc);
     if (argc < 2)
         return EXIT_FAILURE;
 
@@ -19,8 +19,23 @@ int main(int argc, char * argv[]) {
     }
 
     yy::Scanner scanner(file, std::cout);
+    
     yy::parser parser(scanner);
-    return parser.parse();
+
+    
+    parser();
+    /*
+    int res = 
+    while (res != yy::parser::token::token_kind_type::TOK_YYEOF) {
+        std::cout << res << std::endl;
+       
+        res = ;
+    }
+
+    std::cout << res << std::endl;
+    */
+    
+    return 0;
  
 
 

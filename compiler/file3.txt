@@ -1,0 +1,7 @@
+reflex -x -R --header-file=lang.hpp -olang.cpp lang.ll
+bison  -Wall -Wcex -t --header -o parse.cpp parse.yy
+g++ -g    -c -o lang.o lang.cpp
+g++ -g    -c -o parse.o parse.cpp
+g++ -g    -c -o main.o main.cpp
+g++ -g  -o mpl lang.o parse.o main.o -lreflex
+rm -f *.o parse.cpp parse.hpp parse.output parse.xml parse.html parse.gv lang.cpp lang.hpp 
