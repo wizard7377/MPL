@@ -31,22 +31,26 @@
 %language "c++"
 %define api.value.type variant
 %define api.token.prefix {TOK_}
-%parse-param { yy::Scanner& lexer }
+%parse-param { yy::Scanner& lexer } { resultClass * res }
 %define api.token.constructor
 %token SEP IMP EOS VAR
 %token <std::string> MATHTOK
 %nterm <std::vector<mtoken>> state
 %nterm <std::vector<std::vector<mtoken>>> stategroup
 %nterm <ruleForm> hypo
+%nterm <std::vector<ruleForm>> hgroup
+%nterm <std::vector<ruleForm>> ffile
 %glr-parser
 %define parse.error detailed
 
 
-%start hypo
+%start ffile
 %%
 
-
-
+ffile: hgroup YYEOF { $$ = $1; *res = $$; } ;
+hgroup: hypo { $$ = std::vector<ruleForm>({$1}); }
+    | hgroup hypo { $$ = $1; $$.push_back($2); }
+    ;
 hypo: stategroup EOS { 
 		$$.preState = statel();
 		$$.proveState = $1;

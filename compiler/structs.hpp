@@ -19,3 +19,6 @@ class ruleForm {
         statel preState;
         statel proveState;
 };
+
+using resultClass = std::vector<ruleForm>;
+

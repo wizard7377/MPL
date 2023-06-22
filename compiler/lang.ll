@@ -35,7 +35,7 @@
 "$" { return yy::parser::make_VAR(); }
 
 <<EOF>>  { return yy::parser::make_YYEOF(); }
-[^a-zA-Z0-9\h]+ { return yy::parser::make_MATHTOK(str()); }
+[^\u\l\d\h\n";"":""$"]+ { return yy::parser::make_MATHTOK(str()); }
 .  { throw yy::parser::syntax_error("Unknown token."); }
 
 %%

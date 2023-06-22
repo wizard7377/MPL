@@ -1,3 +1,4 @@
-$A @[A@] @[B@] @[ a fun token for fun @] ; @[which does exist@]: $Because all the time;;
+2++8 $A @[A@] @[B@] @[ a fun token 
+for fun @] ; @[which does exist@]: $Because all the time;;
 
-$A @[ a fun token for fun @]; 2+8; @[which does exist@]: $Because all the time;;
+@[ a fun token for fun @]; 2+8; @[which does exist@]: $Because all the time;;
