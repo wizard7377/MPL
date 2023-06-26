@@ -2,7 +2,7 @@
 /*%option nounput noinput*/
 %option dotall
 %option bison bison-cc
-/*%option unicode*/
+%option unicode
 %option namespace=yy
 %option lexer=Scanner
 %option lex=yylex    

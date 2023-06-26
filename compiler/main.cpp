@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <format>
 #include <iostream>
+#include "back.hpp"
 #include <vector>
 
 /*
@@ -64,13 +65,14 @@ void testOutput(resultClass testRes) {
 */
 int main(int argc, char * argv[]) {
     //printf("%d",argc);
-    if (argc < 2)
+    if (argc < 2) {
+		std::cerr << "Please enter a file.\n";
         return EXIT_FAILURE;
-
-    FILE *file = fopen(argv[1], "r");
+	}
+    FILE *file = fopen(argv[argc-1], "r");
 
     if (file == NULL) {
-        perror("Cannot open file");
+		std::cerr << "Please enter a (valid) file.\n";
         return EXIT_FAILURE;
     }
 
@@ -83,7 +85,9 @@ int main(int argc, char * argv[]) {
 
     
     parser();
-    std::cout << (*results)[1].preState[0][0].txt << std::endl;
+    //std::cout << (*results)[0].preState[0][0].txt << std::endl;
+    if (argc > 2) makeFile(*results,argv[argc-2]);
+    else makeFile(*results);
     //testOutput(*results);
     
     return 0;
