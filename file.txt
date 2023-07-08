@@ -1,4 +1,4 @@
-2++8 $A @[A@] @[B@] @[ a fun token 
+thingmagic :: 2++8 $A @[A@] @[B@] @[ a fun token 
 for fun @] ; @[which does exist@]: $Because Ḵall the ←↑time;;
 
 @[ a fun token for fun @]; 2+8; @[which does exist@]: $Because all the time;;

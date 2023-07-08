@@ -33,7 +33,7 @@
 %define api.token.prefix {TOK_}
 %parse-param { yy::Scanner& lexer } { resultClass * res }
 %define api.token.constructor
-%token SEP IMP EOS VAR
+%token SEP IMP EOS VAR CAL
 %token <std::string> MATHTOK
 %nterm <std::vector<mtoken>> state
 %nterm <std::vector<std::vector<mtoken>>> stategroup
@@ -58,7 +58,17 @@ hypo: stategroup EOS {
     | stategroup IMP stategroup EOS {
 		$$.preState = $1;
 		$$.proveState = $3;
-	}	
+	}
+    | MATHTOK CAL stategroup EOS { 
+		$$.preState = statel();
+		$$.proveState = $3;
+        $$.cName = $1;
+	}
+    | MATHTOK CAL stategroup IMP stategroup EOS {
+        $$.cName = $1;
+		$$.preState = $3;
+		$$.proveState = $5;
+	}	 
     ;
 stategroup: state { $$ = statel({$1}); }
     | stategroup SEP state { $$ = $1; $$.push_back($3); }

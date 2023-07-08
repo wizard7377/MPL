@@ -1,4 +1,6 @@
 #include "structs.hpp"
+#include "parse.hpp"
+#include "lang.hpp"
 #include <string>
 #include <filesystem>
 #include <iostream>
@@ -6,6 +8,19 @@
 #include <cstdint>
 namespace fs = std::filesystem;
 
+resultClass fromString(std::string inStr) {
+	FILE *file = tmpfile();
+    resultClass * results = new resultClass({});
+    if (file == NULL) {
+		std::cerr << "Please enter a (valid) file.\n";
+        return *results;
+    }
+	fwrite(inStr.c_str(),sizeof(inStr[0]),inStr.length(),file);
+    yy::Scanner scanner(file, std::cout);
+    yy::parser parser(scanner,results);
+    parser();
+	return *results;
+}
 char * itoc(int inInt) {
 	char * rVal = new char[4];
 	int mask = 0b11111111;
@@ -29,6 +44,7 @@ std::vector<std::string> getTokens(resultClass inState) {
 	std::vector<std::string> tokenList;
 	for (auto hypo : inState) {
 		statel stateList = hypo.preState;
+		tokenList.push_back(hypo.cName);
 		for (auto proveStates : hypo.proveState) stateList.push_back(proveStates);
 
 		for (auto statements : stateList) {
@@ -96,13 +112,14 @@ int makeFile(resultClass inState, std::string outFile) {
 		binFile.write(itoc(curSpace),4);
 		binFile.write(itoc(inState[i].preState.size()),4);
 		binFile.write(itoc(inState[i].proveState.size()),4);
-		curSpace += sizes[i];
+		curSpace += sizes[i] + 1;
 	}
 	binFile.write(ztBuf,4-(curSpace % 4));
 
 	headers[3] = (int)(binFile.tellp()/4);
 	for (int i = 0; i < inState.size(); i++) {
 		statel stateList = inState[i].preState;
+		binFile.write(itoc(getTokenIndex(tokenList,inState[i].cName)),4);
 		for (auto proveStates : inState[i].proveState) stateList.push_back(proveStates);
 		
 		for (int ii = 0; ii < stateList.size(); ii++) {

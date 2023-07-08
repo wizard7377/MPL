@@ -1,0 +1,7 @@
+T;;
+T->$A: $A;;
+$B; $B->$C: $C;;
+$D=$E: $E=$D;;
+@[nothing in math is sure, at best it makes 
+sense @];;
+$W$X$Y$Z @[is a rectangle@]: ∠$W$X$Y=π/2;;

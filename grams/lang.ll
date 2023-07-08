@@ -25,10 +25,11 @@
 %%
 
 
-
+@c.+?\n
 @\[(.+?)@\] { return yy::parser::make_MATHTOK(str().substr(2,size()-4)); }
 \h|\n
 [\u\l\d]+ { return yy::parser::make_MATHTOK(str()); }
+"::" { return yy::parser::make_CAL(); }
 ":" { return yy::parser::make_IMP(); }
 ";;" { return yy::parser::make_EOS(); }
 ";" { return yy::parser::make_SEP(); }

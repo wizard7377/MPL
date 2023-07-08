@@ -1,0 +1,163 @@
+Terminals unused in grammar
+
+    IMP
+    EOS
+    VAR
+    CAL
+
+
+Grammar
+
+    0 $accept: inp $end
+
+    1 inp: cmd
+
+    2 cmd: CMDPART
+    3    | cmd CMDPART
+    4    | cmd MATHSTATE
+    5    | cmd LBAR arr RBAR
+
+    6 arr: CMDPART
+    7    | arr SEP CMDPART
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    SEP (258) 7
+    IMP (259)
+    EOS (260)
+    VAR (261)
+    CAL (262)
+    LBAR (263) 5
+    RBAR (264) 5
+    MATHSTATE <std::string> (265) 4
+    CMDPART <std::string> (266) 2 3 6 7
+
+
+Nonterminals, with rules where they appear
+
+    $accept (12)
+        on left: 0
+    inp <std::vector<op_t>> (13)
+        on left: 1
+        on right: 0
+    cmd <std::vector<op_t>> (14)
+        on left: 2 3 4 5
+        on right: 1 3 4 5
+    arr <std::vector<op_t>> (15)
+        on left: 6 7
+        on right: 5 7
+
+
+State 0
+
+    0 $accept: • inp $end
+    1 inp: • cmd
+    2 cmd: • CMDPART
+    3    | • cmd CMDPART
+    4    | • cmd MATHSTATE
+    5    | • cmd LBAR arr RBAR
+
+    CMDPART  shift, and go to state 1
+
+    inp  go to state 2
+    cmd  go to state 3
+
+
+State 1
+
+    2 cmd: CMDPART •
+
+    $default  reduce using rule 2 (cmd)
+
+
+State 2
+
+    0 $accept: inp • $end
+
+    $end  shift, and go to state 4
+
+
+State 3
+
+    1 inp: cmd •  [$end]
+    3 cmd: cmd • CMDPART
+    4    | cmd • MATHSTATE
+    5    | cmd • LBAR arr RBAR
+
+    LBAR       shift, and go to state 5
+    MATHSTATE  shift, and go to state 6
+    CMDPART    shift, and go to state 7
+
+    $default  reduce using rule 1 (inp)
+
+
+State 4
+
+    0 $accept: inp $end •
+
+    $default  accept
+
+
+State 5
+
+    5 cmd: cmd LBAR • arr RBAR
+    6 arr: • CMDPART
+    7    | • arr SEP CMDPART
+
+    CMDPART  shift, and go to state 8
+
+    arr  go to state 9
+
+
+State 6
+
+    4 cmd: cmd MATHSTATE •
+
+    $default  reduce using rule 4 (cmd)
+
+
+State 7
+
+    3 cmd: cmd CMDPART •
+
+    $default  reduce using rule 3 (cmd)
+
+
+State 8
+
+    6 arr: CMDPART •
+
+    $default  reduce using rule 6 (arr)
+
+
+State 9
+
+    5 cmd: cmd LBAR arr • RBAR
+    7 arr: arr • SEP CMDPART
+
+    SEP   shift, and go to state 10
+    RBAR  shift, and go to state 11
+
+
+State 10
+
+    7 arr: arr SEP • CMDPART
+
+    CMDPART  shift, and go to state 12
+
+
+State 11
+
+    5 cmd: cmd LBAR arr RBAR •
+
+    $default  reduce using rule 5 (cmd)
+
+
+State 12
+
+    7 arr: arr SEP CMDPART •
+
+    $default  reduce using rule 7 (arr)
